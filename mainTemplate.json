@@ -82,6 +82,12 @@
         "description": "Size of the virtual machine."
       }
     },
+    "virtualNetwork": {
+      "type": "string",
+      "metadata": {
+        "description": "vNet of the virtual machine."
+      }
+    },
     "location": {
       "type": "string",
       "defaultValue": "[resourceGroup().location]",
