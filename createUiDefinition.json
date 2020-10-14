@@ -126,7 +126,7 @@
                       }
                   },
                   {
-                    "name": "virtualNetwork",
+                    "name": "VirtualNetwork",
                     "type": "Microsoft.Network.VirtualNetworkCombo",
                     "label": {
                       "virtualNetwork": "Virtual network",
@@ -135,6 +135,10 @@
                     "toolTip": {
                       "virtualNetwork": "",
                       "subnets": ""
+                    },
+                    "defaultValue": {
+                      "name": "vnet01",
+                      "addressPrefixSize": "/16"
                     },
                     "constraints": {
                       "minAddressPrefixSize": "/30"
@@ -151,6 +155,7 @@
                         },
                         "constraints": {
                           "minAddressPrefixSize": "/24",
+                          "minAddressCount": 0,
                           "requireContiguousAddresses": true
                         }
                       },
@@ -162,6 +167,7 @@
                         },
                         "constraints": {
                           "minAddressPrefixSize": "/26",
+                          "minAddressCount": 0,
                           "requireContiguousAddresses": true
                         }
                       }
