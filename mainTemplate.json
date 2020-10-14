@@ -61,10 +61,13 @@
     },
     "vmSize": {
       "type": "string",
-      "defaultValue": "Standard_D2_v3",
+      "defaultValue": "Standard_B2ms",
       "metadata": {
         "description": "Size of the virtual machine."
-      }
+      },
+      "allowedValues": [
+        "Standard_B2ms"
+      ]
     },
     "location": {
       "type": "string",
@@ -79,11 +82,17 @@
       "metadata": {
         "description": "Name of the virtual machine."
       }
+    },
+    "virtualNetworkName": {
+      "type": "string",
+      "defaultValue": "",
+      "metadata": {
+        "description": "Name of the virtual machine."
+      }
     }
   },
   "variables": {
     "storageAccountName": "[concat('bootdiags', uniquestring(resourceGroup().id))]",
-    "subnetRef": "[resourceId(parameters('virtualNetworkName'), 'Microsoft.Network/virtualNetworks/subnets', parameters('virtualNetworkName'),  parameters('subnetName'))]",
     "nicName": "[concat(parameters('vmName'), '-nic1')]",
     "subnetRef": "[resourceId('Microsoft.Network/virtualNetworks/subnets', parameters('virtualNetworkName'), parameters('subnetName'))]",
     "networkSecurityGroupName": "default-NSG"
