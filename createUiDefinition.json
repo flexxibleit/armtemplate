@@ -141,7 +141,7 @@
                       },
                       "subnets": {
                         "subnet1": {
-                          "label": "Subnet",
+                          "label": "Subnet"
                         },
                       },
                       "visible": true
