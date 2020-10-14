@@ -115,8 +115,8 @@
                       "subnets": "Subnets"
                     },
                     "toolTip": {
-                      "virtualNetwork": "",
-                      "subnets": ""
+                      "virtualNetwork": "Virtual network name tooltip",
+                      "subnets": "Subnet name tooltip"
                     },
                     "defaultValue": {
                       "name": "vnet01",
@@ -145,7 +145,35 @@
                     "visible": true
                   }
               ]
-          }
+          },
+          {
+            "name": "FlexxibleLicensing",
+            "label": "Flexxible licensing",
+            "subLabel": {
+                "preValidation": "Configure the Flexxible's resources and settings",
+                "postValidation": "Done"
+            },
+            "bladeTitle": "Flexxible licensing",
+            "elements": [
+                {
+                    "name": "OSVersion",
+                    "type": "Microsoft.Common.DropDown",
+                    "label": "Windows OS Version",
+                    "defaultValue": "flexxibleitwvdsuite-trial",
+                    "toolTip": "The OS Version for the VM Image",
+                    "constraints": {
+                        "allowedValues": [
+                            {
+                                "value": "flexxibleitwvdsuite-trial",
+                                "label": "SmartWorkspaces Trial version"
+                            }
+                        ],
+                        "required": true
+                    },
+                    "visible": true
+                }                
+            ]
+        }
       ],
       "outputs": {
           "location": "[location()]",

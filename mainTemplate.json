@@ -66,7 +66,7 @@
         "description": "Size of the virtual machine."
       }
     },
-    "virtualNetwork": {
+    "virtualNetworkName": {
       "type": "string",
       "metadata": {
         "description": "vNet of the virtual machine."
@@ -84,18 +84,6 @@
       "defaultValue": "simple-vm",
       "metadata": {
         "description": "Name of the virtual machine."
-      }
-    },
-    "virtualNetworkName": {
-      "type": "string",
-      "metadata": {
-        "description": "virtual network name."
-      }
-    },
-    "subnetName": {
-      "type": "string",
-      "metadata": {
-        "description": "Subnet name."
       }
     }
   },
