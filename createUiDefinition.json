@@ -110,7 +110,7 @@
                       }
                   },
                   {
-                    "name": "VirtualNetwork",
+                    "name": "virtualNetwork",
                     "type": "Microsoft.Network.VirtualNetworkCombo",
                     "label": {
                       "virtualNetwork": "Virtual network",
