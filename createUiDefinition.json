@@ -141,10 +141,10 @@
                       "addressPrefixSize": "/24"
                     },
                     "constraints": {
-                      "minAddressPrefixSize": "/30"
+                      "minAddressPrefixSize": "/10"
                     },
                     "options": {
-                      "hideExisting": true
+                      "hideExisting": false
                     },
                     "subnets": {
                       "subnet1": {
@@ -154,9 +154,9 @@
                           "addressPrefixSize": "/24"
                         },
                         "constraints": {
-                          "minAddressPrefixSize": "/24",
+                          "minAddressPrefixSize": "/30",
                           "minAddressCount": 2,
-                          "requireContiguousAddresses": true
+                          "requireContiguousAddresses": false
                         }
                       },
                       "subnet2": {
