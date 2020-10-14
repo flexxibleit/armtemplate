@@ -21,7 +21,6 @@
               "type": "Microsoft.Compute.UserNameTextBox",
               "label": "Username",
               "toolTip": "Admin username for the machine",
-              "defaultValue": "flxadmin",
               "osPlatform": "Windows",
               "constraints": {
                   "required": true
@@ -35,7 +34,6 @@
                   "confirmPassword": "Confirm password"
               },
               "toolTip": "Admin password for the virtual machine",
-              "defaultValue": "Flxadmin2020#!",
               "constraints": {
                   "required": true,
                   "validationMessage": "Validatin message"
