@@ -60,29 +60,13 @@
                       "name": "OSVersion",
                       "type": "Microsoft.Common.DropDown",
                       "label": "Windows OS Version",
-                      "defaultValue": "2019-Datacenter",
+                      "defaultValue": "flexxibleitwvdsuite-trial",
                       "toolTip": "The OS Version for the VM Image",
                       "constraints": {
                           "allowedValues": [
                               {
-                                  "value": "2012-R2-Datacenter",
-                                  "label": "2012-R2-Datacenter"
-                              },
-                              {
-                                  "value": "2016-Nano-Server",
-                                  "label": "2016-Nano-Server"
-                              },
-                              {
-                                  "value": "2016-Datacenter-with-Containers",
-                                  "label": "2016-Datacenter-with-Containers"
-                              },
-                              {
-                                  "value": "2016-Datacenter",
-                                  "label": "2016-Datacenter"
-                              },
-                              {
-                                  "value": "2019-Datacenter",
-                                  "label": "2019-Datacenter"
+                                  "value": "flexxibleitwvdsuite-trial",
+                                  "label": "SmartWorkspaces Trial version"
                               }
                           ],
                           "required": true
