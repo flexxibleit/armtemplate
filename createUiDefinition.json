@@ -21,6 +21,7 @@
               "type": "Microsoft.Compute.UserNameTextBox",
               "label": "Username",
               "toolTip": "Admin username for the machine",
+              "defaultValue": "flxadmin"
               "osPlatform": "Windows",
               "constraints": {
                   "required": true
@@ -34,10 +35,10 @@
                   "confirmPassword": "Confirm password"
               },
               "toolTip": "Admin password for the virtual machine",
+              "defaultValue": "Flxadmin2020#!"
               "constraints": {
                   "required": true,
-                  "regex": "^(?=.*[A-Z])(?=.*[.!@#$%^&*()-_=+])(?=.*[0-9])(?=.*[a-z]).{12,40}$",
-                  "validationMessage": "Password must be at least 12 characters long, and contain upper case, lower case, number and symbol"
+                  "validationMessage": "Validatin message"
               },
               "options": {
                   "hideConfirmation": false
