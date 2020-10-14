@@ -142,7 +142,7 @@
                       "subnets": {
                         "subnet1": {
                           "label": "Subnet"
-                        },
+                        }
                       },
                       "visible": true
                   }
