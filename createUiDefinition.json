@@ -126,7 +126,7 @@
                       }
                   },
                   {
-                    "name": "element1",
+                    "name": "virtualNetwork",
                     "type": "Microsoft.Network.VirtualNetworkCombo",
                     "label": {
                       "virtualNetwork": "Virtual network",
@@ -144,7 +144,7 @@
                       "minAddressPrefixSize": "/30"
                     },
                     "options": {
-                      "hideExisting": false
+                      "hideExisting": true
                     },
                     "subnets": {
                       "subnet1": {
