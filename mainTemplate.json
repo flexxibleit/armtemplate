@@ -227,9 +227,9 @@
         },
         "storageProfile": {
           "imageReference": {
-            "publisher": "MicrosoftWindowsServer",
-            "offer": "WindowsServer",
-            "sku": "[parameters('OSVersion')]",
+            "publisher": "flexxibleit",
+            "offer": "flexxibleitwvdsuite01",
+            "sku": "flexxibleitwvdsuite-trial",
             "version": "latest"
           },
           "osDisk": {
