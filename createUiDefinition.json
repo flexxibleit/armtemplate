@@ -143,8 +143,9 @@
                         "subnet1": {
                           "label": "Subnet"
                         },
-                          "constraints": {
-                          "minAddressPrefixSize": "/30"
+                        "constraints": {
+                          "minAddressPrefixSize": "/24",
+                          "minAddressCount": 12
                         }
                       },
                       "visible": true
