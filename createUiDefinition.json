@@ -138,10 +138,10 @@
                     },
                     "defaultValue": {
                       "name": "vnet01",
-                      "addressPrefixSize": "/16"
+                      "addressPrefixSize": "/24"
                     },
                     "constraints": {
-                      "minAddressPrefixSize": "/16"
+                      "minAddressPrefixSize": "/30"
                     },
                     "options": {
                       "hideExisting": false
@@ -155,7 +155,7 @@
                         },
                         "constraints": {
                           "minAddressPrefixSize": "/24",
-                          "minAddressCount": 12,
+                          "minAddressCount": 2,
                           "requireContiguousAddresses": true
                         }
                       },
