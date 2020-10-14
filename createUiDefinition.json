@@ -123,6 +123,18 @@
                               "domainNameLabel": true
                           }
                       }
+                  },
+                  {
+                    "name": "storageSelector",
+                    "type": "Microsoft.Solutions.ResourceSelector",
+                    "label": "Select storage accounts",
+                    "resourceType": "Microsoft.Storage/storageAccounts",
+                    "options": {
+                        "filter": {
+                            "subscription": "onBasics",
+                            "location": "onBasics"
+                        }
+                    }
                   }
               ]
           }
