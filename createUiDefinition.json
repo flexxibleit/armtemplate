@@ -142,6 +142,9 @@
                       "subnets": {
                         "subnet1": {
                           "label": "Subnet"
+                        },
+                          "constraints": {
+                          "minAddressPrefixSize": "/30"
                         }
                       },
                       "visible": true
