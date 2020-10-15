@@ -77,14 +77,12 @@
     },
     "virtualNetworkName": {
       "type": "string",
-      "defaultValue": "vNet",
       "metadata": {
         "description": "Virtual network name."
       }
     },
     "subnetName": {
       "type": "string",
-      "defaultValue": "subNetName",
       "metadata": {
         "description": "Subnet name."
       }
