@@ -157,33 +157,33 @@
         ]
       }
     },
-    {
-      "type": "Microsoft.Network/virtualNetworks",
-      "apiVersion": "2020-06-01",
-      "name": "[parameters('virtualNetworkName')]",
-      "location": "[parameters('location')]",
-      "dependsOn": [
-        "[resourceId('Microsoft.Network/networkSecurityGroups', variables('networkSecurityGroupName'))]"
-      ],
-      "properties": {
-        "addressSpace": {
-          "addressPrefixes": [
-            "[variables('addressPrefix')]"
-          ]
-        },
-        "subnets": [
-          {
-            "name": "[parameters('subnetName')]",
-            "properties": {
-              "addressPrefix": "[variables('subnetPrefix')]",
-              "networkSecurityGroup": {
-                "id": "[resourceId('Microsoft.Network/networkSecurityGroups', variables('networkSecurityGroupName'))]"
-              }
-            }
-          }
-        ]
-      }
-    },
+    // {
+    //   "type": "Microsoft.Network/virtualNetworks",
+    //   "apiVersion": "2020-06-01",
+    //   "name": "[parameters('virtualNetworkName')]",
+    //   "location": "[parameters('location')]",
+    //   "dependsOn": [
+    //     "[resourceId('Microsoft.Network/networkSecurityGroups', variables('networkSecurityGroupName'))]"
+    //   ],
+    //   "properties": {
+    //     "addressSpace": {
+    //       "addressPrefixes": [
+    //         "[variables('addressPrefix')]"
+    //       ]
+    //     },
+    //     "subnets": [
+    //       {
+    //         "name": "[parameters('subnetName')]",
+    //         "properties": {
+    //           "addressPrefix": "[variables('subnetPrefix')]",
+    //           "networkSecurityGroup": {
+    //             "id": "[resourceId('Microsoft.Network/networkSecurityGroups', variables('networkSecurityGroupName'))]"
+    //           }
+    //         }
+    //       }
+    //     ]
+    //   }
+    // },
     {
       "type": "Microsoft.Network/networkInterfaces",
       "apiVersion": "2020-06-01",
