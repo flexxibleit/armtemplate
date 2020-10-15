@@ -55,23 +55,14 @@
               "bladeTitle": "Virtual Machine Settings",
               "elements": [
                   {
-                      "name": "OSVersion",
-                      "type": "Microsoft.Common.DropDown",
-                      "label": "Windows OS Version",
-                      "defaultValue": "flexxibleitwvdsuite-trial",
-                      "toolTip": "The SmartWorkspaces Version for the VM",
-                      "visible": true
-                  }, 
-
-                  {
                       "name": "vmSize",
                       "type": "Microsoft.Compute.SizeSelector",
                       "label": "Virtual machine size",
                       "toolTip": "The size of virtual machine to provision.",
                       "recommendedSizes": [
                           "Standard_B2ms",
-						  "Standard_D2_v2",
-						  "Standard_D2s_v3"
+						              "Standard_D2_v2",
+						              "Standard_D2s_v3"
                       ],
                       "osPlatform": "Windows",
                       "count": "1"
@@ -147,7 +138,6 @@
           "adminUsername": "[basics('adminUsername')]",
           "adminPassword": "[basics('password')]",
           "vmSize": "[steps('VirtualMachineConfig').vmSize]",
-          "OSVersion": "[steps('VirtualMachineConfig').OSVersion]",
 
           "virtualNetworkName": "[steps('VirtualMachineConfig').virtualNetworkName]",
           "subnetName": "[steps('VirtualMachineConfig').virtualNetworkName.Subnets.subnet1]",
